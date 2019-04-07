@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="#000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_view"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="98dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_insert_photo_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:visibility="visible"
+        app:backgroundTint="#ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/image"
+        android:layout_alignBottom="@+id/image"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
