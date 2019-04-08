@@ -1,6 +1,7 @@
 # FirebaseMLKitSample
 
-Firebase ML Kit Image Recognition
+Firebase ML Kit Image Labeling
+
 
 ### Warning
 
